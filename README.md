@@ -43,5 +43,15 @@ or
   wsl --install -d <Distribution Name>
   ```
 or
-- #### Install distribution like `Almalinux 9`
+- #### Install other distributions, like `Almalinux 9`
   Open the Microsoft Store, search `Almalinux 9`, and download.
+
+## Docker
+### [What is Docker](https://docs.docker.com/get-started/docker-overview/)
+Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly.
+#Namely#, Docker would package the code, environment dependencies, and the operation function, and one could easily run the software on different platforms.
+
+### [How to install Docker in Windows](https://docs.docker.com/desktop/setup/install/windows-install/)
+Referring to this [link](https://docs.docker.com/desktop/setup/install/windows-install/), one can find the download link of Docker for Windows.
+
+Download ==> open the `.exe` ==> click on the next step ==> log out the Windows to complete the installation.
