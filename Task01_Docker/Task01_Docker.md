@@ -146,9 +146,9 @@ There are two ways one can open the vs code:
 In `Task01_Docker/.devcontainer`, one could find a quick way to configure and build a docker with `ALMALinux 9` and necessary tools and VS Code extensions:
 
 ```bash
-vim Task01_Docker/.devcontainer/devcontainer.json # configuration of a container and VS Code extension
+vim Task01_Docker/devcontainer/devcontainer.json # configuration of a container and VS Code extension
 ```
 
 ```bash
-vim Task01_Docker/.devcontainer/Dockerfile # configuration of a docker template on `ALMALinux 9`
+vim Task01_Docker/devcontainer/Dockerfile # configuration of a docker template on `ALMALinux 9`
 ```
