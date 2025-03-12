@@ -1,3 +1,4 @@
+
 - [WSL](#wsl)
   - [What is WSL](#what-is-wsl)
   - [Required `Virtualization Technology` for WSL](#required-virtualization-technology-for-wsl)
@@ -12,6 +13,7 @@
   - [How to use the VS code](#how-to-use-the-vs-code)
     - [Open VS code](#open-vs-code)
     - [Extensions](#extensions)
+- [Template](#template)
 
 ## WSL
 
@@ -138,3 +140,15 @@ There are two ways one can open the vs code:
 2. Dev Containers
 3. Docker
 4. Programming languages package, like python
+
+## Template
+
+In `Task01_Docker/.devcontainer`, one could find a quick way to configure and build a docker with `ALMALinux 9` and necessary tools and VS Code extensions:
+
+```bash
+vim Task01_Docker/.devcontainer/devcontainer.json # configuration of a container and VS Code extension
+```
+
+```bash
+vim Task01_Docker/.devcontainer/Dockerfile # configuration of a docker template on `ALMALinux 9`
+```
