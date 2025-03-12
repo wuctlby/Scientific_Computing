@@ -4,7 +4,7 @@ This is a repository for the course of Scientific Computing
 
 ## 01: Docker
 
-Quick way to use the Docker tools for Windows
+Brief introduction for quickly using the Docker tools for Windows
 
 - WSL
 - Docker
