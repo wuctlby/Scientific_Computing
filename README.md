@@ -2,6 +2,22 @@
 
 This is a repository for the course of Scientific Computing, specified with tools for CERN ALICE
 
+- [Scientific\_Computing](#scientific_computing)
+  - [WSL](#wsl)
+    - [What is WSL](#what-is-wsl)
+    - [Required `Virtualization Technology` for WSL](#required-virtualization-technology-for-wsl)
+    - [How to install WSL](#how-to-install-wsl)
+  - [Docker](#docker)
+    - [What is Docker](#what-is-docker)
+    - [How to install Docker in Windows](#how-to-install-docker-in-windows)
+    - [How to use Docker](#how-to-use-docker)
+  - [VS Code](#vs-code)
+    - [What is VS Code](#what-is-vs-code)
+    - [How to install VS Code](#how-to-install-vs-code)
+    - [How to use the VS code](#how-to-use-the-vs-code)
+      - [Open VS code](#open-vs-code)
+      - [Extensions](#extensions)
+
 ## WSL
 
 ### [What is WSL](https://learn.microsoft.com/en-us/windows/wsl/about)
@@ -104,7 +120,7 @@ Download ==> click on the `.exe` ==> click on the next step (**be sure to choose
 
 **Must be sure to choose `Add to PATH` and reboot, then the folder in WSL can be easily accessed**.
 
-### [How to use the VS code]
+### How to use the VS code
 
 Due to this readme is more about how to install and combine these tools, here only how to install the necessary extensions will be introduced.
 
