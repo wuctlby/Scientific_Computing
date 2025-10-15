@@ -1,0 +1,21 @@
+Matrix Multiplication A * B
+Expected result for all elements: 21.299999999999997
+Dimension: 10, All results match expected value: 21.299999999999997
+Time taken: 0.00 seconds for dimension 10
+Dimension: 100, All results match expected value: 21.299999999999997
+Time taken: 0.00 seconds for dimension 100
+Dimension: 10000, All results match expected value: 21.299999999999997
+Time taken: 0.86 seconds for dimension 10000
+All computations completed in 0.86 seconds
+Matrix Multiplication A * B from C++ ---
+Expected result for all elements: 21.300000
+Time taken for dimension=10: 0.000001 seconds
+Time taken for dimension=100: 0.000009 seconds
+Time taken for dimension=10000: 0.645219 seconds
+Total time taken: 2.115887 seconds
+Matrix Multiplication A * B from C++ ---
+Expected result for all elements: 21.300000
+Time taken for dimension=10: 0.000000 seconds
+Time taken for dimension=100: 0.000046 seconds
+Time taken for dimension=10000: 1.500121 seconds
+Total time taken: 2.974676 seconds

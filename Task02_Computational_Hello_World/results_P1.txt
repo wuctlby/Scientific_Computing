@@ -3,16 +3,17 @@ Expected result for all elements: 7.3999999999999995
 Dimension: 10, All results match expected value: 7.3999999999999995
 Time taken: 0.00 seconds for dimension 10
 Dimension: 1000000, All results match expected value: 7.3999999999999995
-Time taken: 3.07 seconds for dimension 1000000
+Time taken: 2.98 seconds for dimension 1000000
 Dimension: 100000000, All results match expected value: 7.3999999999999995
-Time taken: 307.76 seconds for dimension 100000000
+Time taken: 306.22 seconds for dimension 100000000
 
 Using NumPy arrays:
 Equation: a * x + y
 Expected result for all elements: 7.3999999999999995
 Dimension: 10, All results match expected value: 7.3999999999999995
-Time taken: 0.22 seconds for dimension 10
+Time taken: 0.21 seconds for dimension 10
 Dimension: 1000000, All results match expected value: 7.3999999999999995
-Time taken: 0.23 seconds for dimension 1000000
+Time taken: 0.22 seconds for dimension 1000000
 Dimension: 100000000, All results match expected value: 7.3999999999999995
-Time taken: 0.92 seconds for dimension 100000000
+Time taken: 0.93 seconds for dimension 100000000
+All computations completed in 0.93 seconds

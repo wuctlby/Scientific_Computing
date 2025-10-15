@@ -1,0 +1,12 @@
+Hello World from C++!
+Expected result: 7.400000
+Time taken for n=10: 0.000000 seconds
+Time taken for n=1000000: 0.001964 seconds
+Time taken for n=100000000: 0.182566 seconds
+Total time taken: 1.499526 seconds
+Hello World from C++!
+Expected result: 7.400000
+Time taken for n=10: 0.000001 seconds
+Time taken for n=1000000: 0.014290 seconds
+Time taken for n=100000000: 1.453925 seconds
+Total time taken: 2.592775 seconds
