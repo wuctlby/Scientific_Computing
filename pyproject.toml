@@ -1,0 +1,9 @@
+[project]
+name = "scientific-computing"
+version = "0.1.0"
+description = "This is a project for the course of Scientific Computing"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy",
+]
