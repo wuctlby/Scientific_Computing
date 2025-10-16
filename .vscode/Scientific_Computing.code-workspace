@@ -74,7 +74,14 @@
 			"stdexcept": "cpp",
 			"streambuf": "cpp",
 			"cinttypes": "cpp",
-			"typeinfo": "cpp"
-		}
+			"typeinfo": "cpp",
+			"map": "cpp",
+			"format": "cpp",
+			"iomanip": "cpp"
+		},
+		"github.copilot.enable": {
+			"markdown": true
+		},
+		"editor.accessibilitySupport": "off"
 	}
 }
