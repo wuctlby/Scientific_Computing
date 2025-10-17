@@ -1,3 +1,14 @@
+# Answer the following questions
+1. If using the same pakage to express the special number, like pi, e, the integral is the true value.
+2. It's the minimum error that cannot be reduced
+3. The minimum error is 0
+4. If using the numerical integration, it's close to the one in point 1. Relative error is 8.400431313389404e-07. While if using the package to integrate it, the result is the same as point 1.
+
+# Sourve Code
+
+## compiled language
+C++ (GSL)
+```C++
 #include <gsl/gsl_math.h>
 #include <gsl/gsl_sf.h>
 #include <gsl/gsl_vector.h>
@@ -64,3 +75,53 @@ int main (int argc, char *argv[]) {
 
     return 0;
 }
+```
+Makefile
+```makefile
+CXX = g++
+CXXGSLFLAGS += `gsl-config --cflags` -std=c++17 -O2
+LDGSLFLAGS  += `gsl-config --libs`
+
+OBJ = function.o
+
+TARGETS = function
+
+function: function.cxx
+	${CXX} ${CXXGSLFLAGS} -o $@ $< ${LDGSLFLAGS}
+
+.PHONY: clean
+
+clean:
+	rm -f $(TARGETS)
+```
+
+## interpreted language
+Python (SciPy)
+```python
+import numpy as np
+from scipy.integrate import quad
+
+expected_result = (np.exp(np.pi/2) - 1) / 2
+
+def f(x):
+    return np.exp(x) * np.cos(x)
+
+def relative_error(approx, exact):
+    return abs(approx - exact) / abs(exact)
+
+if __name__ == "__main__":
+    result, error = quad(f, 0, np.pi/2)
+    print(f"Integral result: {result:.15f}, Estimated error: {error}")
+    print(f"Expected result: {expected_result:.15f}")
+    print(f"Relative error: {relative_error(result, expected_result)}")
+
+    # integrate from .dat file
+    with open("data_points.dat", "r") as file:
+        data = np.loadtxt(file, skiprows=1)
+    x_data, y_data = data[:, 0], data[:, 1]
+
+    # Perform numerical integration using the trapezoidal rule
+    result = np.trapezoid(y_data, x_data)
+    print(f"Integral result from data: {result:.15f}")
+    print(f"Relative error from data: {relative_error(result, expected_result)}")
+```

@@ -18,7 +18,7 @@ OBJ = function.o
 TARGETS = function
 
 function: function.cxx
-	${CXX} ${CXXGSLFLAGS} -o $@ $<
+	${CXX} ${CXXGSLFLAGS} -o $@ $< ${LDGSLFLAGS}
 
 .PHONY: hdf5 clean gsl
 
