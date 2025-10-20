@@ -12,6 +12,7 @@
 - [x] [BONUS] Reduce the dimension of A to 6x6. Try to obtain matrix C from matrix R.
   - At the begging, I was printing R with a wrong format, I didn't realize what wiill happen for a out-place transform and the column that is out of (N/2+1) does not exist. I tried to understand what is **“In many practical applications, the input data in[i] are purely real numbers, in which case the DFToutputsatisfies the “Hermitian” redundancy: out[i] is the conjugate of out[n-i].”**. At the end I found that the index is countiued with (N/2+1) columns per row. Then I chekcked the outputs of R and C, and I finally figured out how to obtain C from R. See the code below.
   - ![alt text](image.png)
+  - reference: https://www.fftw.org/fftw3.pdf
 # output
 ## Errors
 ```bash
