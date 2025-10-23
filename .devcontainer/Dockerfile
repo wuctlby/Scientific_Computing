@@ -18,6 +18,7 @@ RUN dnf update -y && \
     make \
     cmake \
     which \
+    gsl gsl-devel fftw fftw-devel \
     && dnf clean all \
     && rm -rf /var/cache/dnf
 
@@ -32,3 +33,4 @@ ENV LANG=C.UTF-8
 
 ENV PATH="/home/$USERNAME/.local/bin:$PATH"
 RUN pip3 install --user --upgrade pip
+RUN pip3 install --user numpy scipy pytest

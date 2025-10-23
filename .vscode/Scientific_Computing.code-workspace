@@ -77,7 +77,13 @@
 			"typeinfo": "cpp",
 			"map": "cpp",
 			"format": "cpp",
-			"iomanip": "cpp"
+			"iomanip": "cpp",
+			"charconv": "cpp",
+			"cstring": "cpp",
+			"set": "cpp",
+			"expected": "cpp",
+			"span": "cpp",
+			"variant": "cpp"
 		},
 		"github.copilot.enable": {
 			"markdown": true
